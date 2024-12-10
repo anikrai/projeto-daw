@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% posts.forEach(post => { %>
+        <li><%= post.titulo %></li>
+        <li><%= post.conteudo %></li>
+        <li><%= post.id %></li>
+        <form action="/EditarPostagems/<%= post.id %>" method="post">
+            <button type="submit">EDITAR</button>
+        </form> 
+        <form action="/postagems/<%= post.id %>?_method=DELETE"  method="post">
+            <button type="submit">DELETAR</button>
+        </form>
+        <br>
+    <% }) %>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dependencies": "^0.0.1",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "method-override": "^3.0.0",
+    "modules": "^0.4.0",
+    "nodemon": "^3.1.7",
+    "sqlite3": "^5.1.7"
+  },
+  "scripts": {
+    "dev": "npx nodemon server.js"
+  }
+}

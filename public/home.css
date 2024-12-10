@@ -1,0 +1,81 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, #31a187, black, #a13048);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Impede rolagem */
+}
+
+.splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.splash img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.main-content {
+    display: none;
+    text-align: center;
+}
+.texto{
+    color: white;
+    text-decoration: none;
+}
+.splash-buttons {
+    margin-top: 20px;
+}
+
+.container{
+    text-align: center;
+}
+
+.splash-buttons button {
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #5c2a2b; /* Cor base do botão */
+    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+.button {
+    color: white;
+    text-decoration: none;
+}
+.splash-buttons button:hover {
+    background-color: #733c3d; /* Cor ao passar o mouse */
+}
+
+.fade-in {
+    animation: fadeIn 2s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cadastro.css" rel="stylesheet" />
+    <script src="tema.js"></script>
+    <title>Cadastro de Usuário</title>
+    <script>
+        // Exibe um alert com a mensagem de erro, se houver
+        window.onload = function () {
+            const error = "<%= error %>";
+            if (error) {
+                alert(error); // Exibe o erro no alert
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="Catuw.gif" alt="Imagem Centralizada">
+    </div>
+
+    <div class="cadastro">
+        <h1>Cadastro</h1>
+        <form action="/cadastro" method="POST">
+            <input type="text" name="nome" required placeholder="Usuário"><br><br>
+            <input type="email" name="email" required placeholder="Email"><br><br>
+            <input type="password" name="senha" required placeholder="Senha"><br><br>
+            <input type="password" name="senha2" required placeholder="Confirmar Senha"><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

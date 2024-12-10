@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <!-- Carrega o tema baseado na preferência do usuário -->
+    <link rel="stylesheet" href="config.css" id="themeStylesheet">
+</head>
+<body>
+
+<div class="header">
+    <h1>Configurações</h1>
+    <button id="backButton"><a href="http://127.0.0.1:5500/FORUM/forums.html">Voltar</a></button>
+</div>
+
+<div class="settings-container">
+    <h2>Preferências</h2>
+    <form id="settingsForm">
+        <label for="theme">Tema:</label>
+        <select id="theme" name="theme">
+            <option value="dark">Escuro</option>
+            <option value="light">Claro</option>
+        </select>
+        
+        <label for="notifications">Notificações:</label>
+        <input type="checkbox" id="notifications" name="notifications">
+        
+        <button class="configButton" type="submit">Salvar Configurações</button>
+    </form>
+
+    <div class="actions">
+        <a href="http://127.0.0.1:5500/LOGIN/tela_de_login.html"><button id="changeAccountButton">Mudar Conta</button></a>
+        <a href="http://127.0.0.1:5500/LOGIN/tela_de_login.html"><button id="logoutButton">Sair</button></a>
+        <a href="http://127.0.0.1:5500/REGISTRO/tela_de_registro.html"><button id="deleteAccountButton">Excluir Conta</button></a>
+    </div>
+</div>
+
+<script src="tema.js"></script>
+
+</body>
+</html>

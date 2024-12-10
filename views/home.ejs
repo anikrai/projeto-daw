@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="tema.js"></script>
+    
+</head>
+<body>
+<div class="splash">
+    <img src="Catuw.gif" alt="Logo do Site">
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <img src="Catuw.gif" alt="Imagem Centralizada">
+    </div>
+    <div class="splash-buttons">
+        <button>  <a href="/login" class="button">Login</a > </button>
+        <br><br>
+        <button> <a href="/cadastro" class="button">Cadastre-se</a> </button>              
+    </div>  
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const splash = document.querySelector('.splash');
+        const mainContent = document.querySelector('.main-content');
+        const splashButtons = document.querySelector('.splash-buttons');
+
+        // Animação de entrada
+        splash.classList.add('fade-in');
+
+        setTimeout(() => {
+            // Animação de saída
+            splash.classList.add('fade-out');
+
+            setTimeout(() => {
+                splash.style.display = 'none';
+                mainContent.style.display = 'block';
+                splashButtons.classList.add('fade-in'); // Exibe os botões com fade-in
+            }, 2000); // Tempo para a animação de saída (2 segundos)
+        }, 3000); // Duração da splash screen (3 segundos)
+    });
+</script>
+
+</body>
+</html>

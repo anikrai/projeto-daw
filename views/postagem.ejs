@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/postagem" method="post">
+        <!-- Campo para título -->
+        <div class="mb-3">
+            <label for="recipient-name" style="color: #5ceecc" class="col-form-label">Título:</label>
+            <input type="text" style="background-color: #b2f3e4" class="form-control" id="titulo" name="titulo">
+        </div>
+
+        <!-- Campo para descrição -->
+        <div class="mb-3">
+            <label for="message-text" style="color: #5ceecc" class="col-form-label">Descrição:</label>
+            <textarea class="form-control" style="background-color: #b2f3e4" id="conteudo" name="conteudo"></textarea>
+        </div>
+        
+        <button type="submit">Forum</button>
+        <button type="submit">Historias</button>
+        <button type="submit">Cancelar</button>
+    </form>
+</body>
+</html>
